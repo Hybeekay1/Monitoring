@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${service_name}
+  namespace: ${k8s_namespace}
+spec:
+  selector:
+    matchLabels:
+      app: ${service_name}
+  template:
+    metadata:
+      labels:
+        app: ${service_name}
+      annotations:
+        instrumentation.opentelemetry.io/inject-java: "true"
+    spec:
+      containers:
+      - name: ${service_name}
+        image: malik0x/pet-clinic:latest
+        ports: 
+        - containerPort: 9464
+          protocol: TCP
+          name: metrics
+        - containerPort: 8080
+          protocol: TCP
+          name: http
