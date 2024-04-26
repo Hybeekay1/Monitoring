@@ -1,10 +1,10 @@
 # Monitoring
 # prerequisite
-1. Docker [insallation guide](https://docs.docker.com/desktop/install/linux-install/)
-2. Kubernetes [insallation guide](https://minikube.sigs.k8s.io/docs/start/)
-3. terraform [insallation guide](https://developer.hashicorp.com/terraform/install)
-4. Helm chart [insallation guide](https://helm.sh/docs/intro/install/)
-5. opentelemetry [insallation guide](https://opentelemetry.io/docs/kubernetes/operator/automatic/)
+1. Docker [installation guide](https://docs.docker.com/desktop/install/linux-install/)
+2. Kubernetes [installation guide](https://minikube.sigs.k8s.io/docs/start/)
+3. terraform [installation guide](https://developer.hashicorp.com/terraform/install)
+4. Helm chart [installation guide](https://helm.sh/docs/intro/install/)
+5. opentelemetry [installation guide](https://opentelemetry.io/docs/kubernetes/operator/automatic/)
 6. tempo 
 7. loki 
 8. promethus 
